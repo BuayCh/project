@@ -2,15 +2,14 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import { Outlet } from 'react-router'
 
-function LayoutAdmin() {
+function Layout() {
   return (
     <div>
-        <Navbar/>
-
+        <Navbar />
+        <hr />
         <Outlet />
-
-    </div>
+        </div>
   )
 }
 
-export default LayoutAdmin
+export default Layout

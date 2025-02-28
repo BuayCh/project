@@ -1,12 +1,13 @@
 import React from "react";
 import { Route, Routes } from "react-router";
+import Layout from "../Layouts/LayoutAdmin";
 import Home from "../pages/Home";
 import About from "../pages/About";
-import LayoutAdmin from "../Layouts/LayoutAdmin";
+import LayoutAdmin from "../Layouts/Layout";
+import Dashboard from "../pages/admin/Dashboard";
 import Manage from "../pages/admin/Manage";
 import NotFound from "../pages/NotFound";
-import Dashboard from "../pages/admin/Dashboard";
-import Layout from "../Layouts/Layout";
+import Register from "../pages/auth/Register";
 
 
 const AppRoutes = () => {
@@ -16,6 +17,7 @@ const AppRoutes = () => {
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="register" element={<Register/>} />
       </Route>
       {/* Private */}
       <Route path="admin" element={<LayoutAdmin />}>
