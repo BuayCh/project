@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 
 function Logo() {
   return (
-    <button>
+    <button className="btn">
       <Link to='/'>Logo</Link>
       </button>
   )

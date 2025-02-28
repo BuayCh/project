@@ -1,9 +1,21 @@
-import React from 'react'
+import React from "react";
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  SignOutButton,
+  SignUpButton,
+  UserButton,
+} from "@clerk/clerk-react";
 
 function Home() {
   return (
-    <div>Home</div>
-  )
+    <div>
+      Home
+      
+    
+    </div>
+  );
 }
 
-export default Home
+export default Home;
