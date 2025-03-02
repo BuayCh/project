@@ -8,6 +8,7 @@ import Dashboard from "../pages/admin/Dashboard";
 import Manage from "../pages/admin/Manage";
 import NotFound from "../pages/NotFound";
 import Register from "../pages/auth/Register";
+import Booking from "../pages/admin/Booking";
 
 
 const AppRoutes = () => {
@@ -24,6 +25,7 @@ const AppRoutes = () => {
         
         <Route index element={<Dashboard />} />
         <Route path="manage" element={<Manage />} />
+        <Route path="booking" element={<Booking />} />
       </Route>
 
       <Route path="*" element={<NotFound />} />

@@ -1,12 +1,17 @@
-import AppRoutes from "./routes/ApppRoute"
+import AppRoutes from "./routes/ApppRoute";
+import { ToastContainer, toast } from 'react-toastify'
 
 function App() {
-
   return (
-   <>
-   <AppRoutes />
-   </>
-  )
+    <>
+      <div>
+      <AppRoutes />
+        <ToastContainer 
+
+        />
+      </div>
+    </>
+  );
 }
 
-export default App
+export default App;

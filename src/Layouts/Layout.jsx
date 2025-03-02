@@ -1,16 +1,15 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import { Outlet } from 'react-router'
-import Searchbar from '../components/Searchbar'
 
 function LayoutAdmin() {
   return (
-    <div>
+      <main className='container'>
         <Navbar/>
-      <Searchbar/>
+        <hr />
         <Outlet />
+      </main>
 
-    </div>
   )
 }
 

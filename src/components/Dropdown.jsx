@@ -12,6 +12,7 @@ import {
   UserButton,
 } from "@clerk/clerk-react";
 import Register from "../pages/auth/Register";
+import SignOutLink from "./SignOutLink";
 
 function Dropdown() {
   return (
@@ -47,7 +48,7 @@ function Dropdown() {
         <SignedIn>
           <li>
             {/* <UserButton /> */}
-            <SignOutButton />
+            <SignOutLink />
           </li>
         </SignedIn>
       </ul>
