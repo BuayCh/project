@@ -2,15 +2,18 @@ import React from "react";
 import { Label } from "../ui/label";
 import { Textarea } from "../ui/textarea";
 
-function TextAreainput ({register, name, type, placeholder}) {
+function TextAreainput ({register, name, type, placeholder, errors}) {
   return (
     <div className="mb-2">
       <Label htmlFor={name} className="capitalize font-bold" >{name}</Label>
       <Textarea
-       {...register("name")} 
+       {...register(name)} 
        rows={5}
        type={type} 
-       placeholder={placeholder}/>
+       placeholder={placeholder}
+       className={`${errors[name] && "border-red-500"}`}
+       />
+       {errors[name]  && (<p className="text-red-500 text-sm">{errors[name].message}</p>)}
     </div>
   );
 }

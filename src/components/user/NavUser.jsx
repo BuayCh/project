@@ -1,19 +1,19 @@
 import React from "react";
-import Logo from "./Logo";
-import Searchbar from "./Searchbar";
-import Dropdown from "./Dropdown";
+import Logo from "../Logo";
+import Searchbar from "../Searchbar";
+import DropdownUser from "./DropdownUser";
 
-function Navbar() {
+function NavUser() {
   return (
     <nav>
       <div className="flex flex-col items-center sm:justify-between py-4  sm:flex-row gap-4">
         <Logo />
         <Searchbar />
         
-        <Dropdown />
+        <DropdownUser />
       </div>
     </nav>
   );
 }
 
-export default Navbar;
+export default NavUser;

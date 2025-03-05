@@ -2,9 +2,9 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import { Outlet } from 'react-router'
 
-function LayoutAdmin() {
+function Layout() {
   return (
-      <main className='container'>
+      <main className='container '>
         <Navbar/>
         <hr />
         <Outlet />
@@ -13,4 +13,4 @@ function LayoutAdmin() {
   )
 }
 
-export default LayoutAdmin
+export default Layout

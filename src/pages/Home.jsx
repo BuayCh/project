@@ -1,18 +1,11 @@
 import React from "react";
-import {
-  SignedIn,
-  SignedOut,
-  SignInButton,
-  SignOutButton,
-  SignUpButton,
-  UserButton,
-} from "@clerk/clerk-react";
+import Contact from "./Contact";
+import MapUser from "@/components/MapUser";
 
 function Home() {
   return (
     <div>
-      Home
-
+     Home
     </div>
   );
 }
